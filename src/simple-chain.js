@@ -11,7 +11,7 @@ const chainMaker = {
     return this;
   },
   removeLink(position) {
-    if((!Number.isInteger(position))  (position < 1)  (position >this.arr.length)) {
+    if((!Number.isInteger(position)) || (position < 1) ||  (position >this.arr.length)) {
       this.arr = [];
       throw "Error";
     }
